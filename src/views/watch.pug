@@ -1,0 +1,15 @@
+extends index.pug
+
+block content
+  nav
+    ul  
+      li 
+        a(href=`/movies/${movie.id}/edit`) Edit
+    ul  
+      li 
+        a(href=`/movies/${movie.id}/delete`) Delete
+  
+  h2=movie.summary
+  p=`year : ${movie.year}`
+  p=`rating : ${movie.rating}`
+  p=`genres : ${movie.genres}`

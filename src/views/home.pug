@@ -1,0 +1,9 @@
+extends index.pug
+include mixins/video
+
+block content
+    each video in movie
+        +video(video)
+    else    
+        li sorry nothing found.
+    

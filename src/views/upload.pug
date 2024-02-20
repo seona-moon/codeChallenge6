@@ -1,0 +1,12 @@
+extends index.pug
+
+block content
+    if errorMessage  
+        span=errorMessage
+    form(method="post") 
+        input(placeholder = "Title", name="title", required, type="text")
+        input(placeholder = "Summary", name="summary", required, type="text")
+        input(placeholder = "Year", name="year", required, type="text")
+        input(placeholder = "Rating", name="rating", required, type="text")
+        input(placeholder = "Genres, separated by comma.", name="genres", required, type="text")
+        input(value ="Upload Video" type="submit")

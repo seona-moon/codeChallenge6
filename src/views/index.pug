@@ -1,0 +1,20 @@
+doctype html
+html(lang="ko")
+    head   
+        title #{pageTitle} | Nomad Coder
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+    body    
+        nav
+            ul  
+                li 
+                    a(href="/") Home
+            ul  
+                li 
+                    a(href="/upload") Upload
+            ul  
+                li 
+                    a(href="/search") Search
+        header
+            h1=pageTitle
+        main
+            block content

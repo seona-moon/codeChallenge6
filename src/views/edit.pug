@@ -1,0 +1,11 @@
+extends index.pug
+
+block content 
+    h4 Edit Movie
+    form(method="post") 
+        input(placeholder = "Title", name="title",value=movie.title required, type="text")
+        input(placeholder = "Summary", name="summary",value=movie.summary required, type="text")
+        input(placeholder = "Year", name="year",value=movie.year required, type="text")
+        input(placeholder = "Rating", name="rating",value=movie.rating required, type="text")
+        input(placeholder = "Genres, separated by comma.",value=movie.genres name="genres", required, type="text")
+        input(value ="Upload Video" type="submit")
